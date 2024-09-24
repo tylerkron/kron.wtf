@@ -14,7 +14,7 @@ title = "kron.wtf"
 
 [params.author]
   name = "Tyler Kron"
-  image = "img/tyler.jpg"
+  image = "img/tyler.png"
   headline = "Director by Day, Entrepenuer by Night"
   bio = "Keeping it real"
   links = [

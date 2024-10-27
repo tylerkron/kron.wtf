@@ -143,8 +143,10 @@ If I were to make this again, I'd try to change the following:
 
 - It's bulky. It made the costume front-heavy. I'd minimize size and weight.
 - Better attachment. I used Velcro 3M strips to hold it to the costume. Thus far, it's holding up, but it likely won't last long.
+
 <p align="center">
 <img src="attachment.jpg" alt="Final Product" style="max-height: 400px;"/>
 </p>
+
 - The on/off switch on the circuit enclosure's cover was not needed. I'd move it to the side. This was an unnecessary failure point.
 - 9v couldn't always handle the demands of the circuit and speaker. During loud sounds, the voltage would drop from 9v to 4v. A different power supply or fancier circuitry would likely fix that.

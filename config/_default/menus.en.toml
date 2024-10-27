@@ -22,9 +22,14 @@
   weight = 20
 
 [[main]]
+  name = "Projects"
+  pageRef = "projects"
+  weight = 30
+
+[[main]]
   name = "Thought Leadership"
   pageRef = "thought-leadership"
-  weight = 30
+  weight = 40
 
 # [[main]]
 #   name = "Tags"

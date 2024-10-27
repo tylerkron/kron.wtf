@@ -51,7 +51,7 @@ fingerprintAlgorithm = "sha256"
   showTaxonomies = false
   showWordCount = false
   showComments = false
-  # sharingLinks = ["facebook", "x-twitter", "mastodon", "pinterest", "reddit", "linkedin", "email", "telegram", "line", "weibo"]
+  sharingLinks = ["x-twitter", "linkedin", "email"]
 
 [list]
   showBreadcrumbs = false

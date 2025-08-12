@@ -1,3 +1,6 @@
 baseURL = "https://kron.wtf"
 languageCode = "en"
 googleAnalytics = "G-RZD93Z6YPJ"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]

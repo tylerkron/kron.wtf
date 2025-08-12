@@ -6,4 +6,4 @@ cascade:
   showReadingTime: false
 ---
 
-Below is a collection of products that I've been apart of:
+Below is a collection of products that I've been a part of:

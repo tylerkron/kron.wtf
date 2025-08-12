@@ -8,6 +8,8 @@ title = "kron.wtf"
 
 [params]
   dateFormat = "2 January 2006"
+  description = "Portfolio, products, projects, and thought leadership by Tyler Kron — engineering leadership, software, and hardware."
+  images = ["img/tyler.png"]
 
   # mainSections = ["section1", "section2"]
   # description = "My awesome website"
@@ -15,7 +17,7 @@ title = "kron.wtf"
 [params.author]
   name = "Tyler Kron"
   image = "img/tyler.png"
-  headline = "Director by Day, Entrepenuer by Night"
+  headline = "Director by Day, Entrepreneur by Night"
   bio = "Keeping it real"
   links = [
   #   { email = "mailto:hello@your_domain.com" },

@@ -16,5 +16,5 @@ DAQiFi is revolutionizing the data collection experience with convenient, portab
 ## Links
 
 - [DAQiFi Website](https://daqifi.com/)
-- [{{< icon "linkedin" >}} DAQiFi LinkedIn](https://www.linkedin.com/company/daqifi/about/)
-- [{{< icon "github" >}} DAQiFi Desktop Application](https://github.com/daqifi/daqifi-desktop)
+ - [DAQiFi LinkedIn](https://www.linkedin.com/company/daqifi/about/)
+ - [DAQiFi Desktop Application](https://github.com/daqifi/daqifi-desktop)

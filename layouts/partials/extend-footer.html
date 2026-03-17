@@ -1,0 +1,196 @@
+<script>
+(function () {
+  'use strict';
+
+  /* ══════════════════════════════════════════════════════════════
+     1. PARTICLE CANVAS
+     Floating constellation network overlaid on the whole site.
+     Uses pointer-events: none so clicks pass through freely.
+     ══════════════════════════════════════════════════════════════ */
+  var canvas = document.createElement('canvas');
+  canvas.id = 'kw-canvas';
+  document.body.appendChild(canvas);
+  var ctx = canvas.getContext('2d');
+  var W = 0, H = 0, particles = [];
+
+  function resize() {
+    W = canvas.width  = window.innerWidth;
+    H = canvas.height = window.innerHeight;
+  }
+
+  function initParticles() {
+    var count = Math.min(Math.floor(W * H / 14000), 90);
+    particles = [];
+    for (var i = 0; i < count; i++) {
+      particles.push({
+        x:  Math.random() * W,
+        y:  Math.random() * H,
+        vx: (Math.random() - 0.5) * 0.35,
+        vy: (Math.random() - 0.5) * 0.35,
+        r:  Math.random() * 1.4 + 0.7
+      });
+    }
+  }
+
+  function isDark() {
+    return document.documentElement.classList.contains('dark');
+  }
+
+  function tick() {
+    ctx.clearRect(0, 0, W, H);
+    var dark      = isDark();
+    var rgb       = dark ? '56,189,248' : '14,165,233';   /* sky-400 / sky-500 */
+    var dotAlpha  = dark ? 0.38 : 0.20;
+    var lineAlpha = dark ? 0.20 : 0.09;
+    var MAX       = 130;
+    var MAX2      = MAX * MAX;
+
+    for (var i = 0; i < particles.length; i++) {
+      var p = particles[i];
+      p.x = (p.x + p.vx + W) % W;
+      p.y = (p.y + p.vy + H) % H;
+
+      /* dot */
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+      ctx.fillStyle = 'rgba(' + rgb + ',' + dotAlpha + ')';
+      ctx.fill();
+
+      /* connections */
+      for (var j = i + 1; j < particles.length; j++) {
+        var q  = particles[j];
+        var dx = p.x - q.x;
+        var dy = p.y - q.y;
+        var d2 = dx * dx + dy * dy;
+        if (d2 < MAX2) {
+          var t = (1 - Math.sqrt(d2) / MAX) * lineAlpha;
+          ctx.beginPath();
+          ctx.moveTo(p.x, p.y);
+          ctx.lineTo(q.x, q.y);
+          ctx.strokeStyle = 'rgba(' + rgb + ',' + t + ')';
+          ctx.lineWidth = 0.8;
+          ctx.stroke();
+        }
+      }
+    }
+    requestAnimationFrame(tick);
+  }
+
+  resize();
+  initParticles();
+  tick();
+  window.addEventListener('resize', function () { resize(); initParticles(); });
+
+
+  /* ══════════════════════════════════════════════════════════════
+     2. GLITCH EFFECT — site title ("kron.wtf")
+     Congo renders the title as <a rel="me" href="/"> in the header.
+     We add the kw-glitch class and fire a random periodic glitch.
+     ══════════════════════════════════════════════════════════════ */
+  function initGlitch() {
+    var el = document.querySelector('header a[rel="me"]');
+    if (!el) return;
+
+    el.classList.add('kw-glitch');
+    el.setAttribute('data-text', el.textContent.trim());
+
+    function glitch() {
+      el.classList.add('kw-glitching');
+      setTimeout(function () { el.classList.remove('kw-glitching'); }, 400);
+      schedule();
+    }
+
+    function schedule() {
+      setTimeout(glitch, 7000 + Math.random() * 9000);  /* every 7-16 s */
+    }
+
+    setTimeout(glitch, 2500);  /* first glitch on page load */
+  }
+
+
+  /* ══════════════════════════════════════════════════════════════
+     3. TYPING ANIMATION — profile headline
+     Congo renders the headline as <h2 class="text-xl ..."> on the
+     homepage. We clear it and type it out character by character.
+     ══════════════════════════════════════════════════════════════ */
+  function initTyping() {
+    /* Only run on the homepage */
+    if (window.location.pathname !== '/' &&
+        !window.location.pathname.match(/^\/index\.html?$/)) return;
+
+    var text = 'Director by Day, Entrepreneur by Night';
+    var target = null;
+    var h2s = document.querySelectorAll('h2');
+    for (var i = 0; i < h2s.length; i++) {
+      if (h2s[i].textContent.trim() === text) {
+        target = h2s[i];
+        break;
+      }
+    }
+    if (!target) return;
+
+    /* Clear and attach blinking cursor */
+    target.textContent = '';
+    var cursor = document.createElement('span');
+    cursor.className = 'kw-cursor';
+    target.appendChild(cursor);
+
+    var idx = 0;
+    var id = setInterval(function () {
+      if (idx < text.length) {
+        target.insertBefore(document.createTextNode(text[idx++]), cursor);
+      } else {
+        clearInterval(id);          /* cursor keeps blinking after typing */
+      }
+    }, 50);
+  }
+
+
+  /* ══════════════════════════════════════════════════════════════
+     4. SCROLL REVEAL — article cards
+     Congo list pages render each item as <article class="mt-6 …">.
+     We fade + slide them in as they enter the viewport.
+     ══════════════════════════════════════════════════════════════ */
+  function initScrollReveal() {
+    var articles = document.querySelectorAll('article.mt-6');
+    if (!articles.length) return;
+
+    /* Apply staggered transition delays before hiding */
+    articles.forEach(function (el, i) {
+      el.classList.add('kw-reveal');
+      if (i > 0) {
+        el.style.transitionDelay = (Math.min(i, 8) * 0.07) + 's';
+      }
+    });
+
+    /* One RAF so the browser paints opacity:0 before we start observing */
+    requestAnimationFrame(function () {
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) {
+            e.target.classList.add('kw-visible');
+            io.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.08 });
+
+      articles.forEach(function (el) { io.observe(el); });
+    });
+  }
+
+
+  /* ── Init (DOM is already parsed when footer script runs) ───── */
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', function () {
+      initGlitch();
+      initTyping();
+      initScrollReveal();
+    });
+  } else {
+    initGlitch();
+    initTyping();
+    initScrollReveal();
+  }
+
+}());
+</script>

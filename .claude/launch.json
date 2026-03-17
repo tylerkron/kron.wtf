@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "kron.wtf",
+      "runtimeExecutable": "hugo",
+      "runtimeArgs": ["server", "--port", "8080"],
+      "port": 8080
+    }
+  ]
+}

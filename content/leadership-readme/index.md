@@ -1,5 +1,5 @@
 ---
-title: "Manager README"
+title: "Leadership README"
 description: "How Tyler Kron leads, communicates, makes decisions, and supports a product-focused engineering team."
 showAuthor: false
 showDate: false
@@ -11,7 +11,7 @@ sharingLinks: ["linkedin", "email"]
 
 <section class="manager-readme-hero">
   <div class="manager-readme-intro">
-    <p class="manager-readme-kicker">Tyler Kron's Manager README</p>
+    <p class="manager-readme-kicker">Tyler Kron's Leadership README</p>
     <p class="manager-readme-updated">Last updated May 2026</p>
     <p class="manager-readme-lede">
       This is a guide for people who report to me, and a public statement of the kind of leader I am trying to be.

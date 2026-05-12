@@ -85,3 +85,249 @@
   opacity: 1;
   transform: none;
 }
+
+/* ── Manager README ─────────────────────────────────────────── */
+.manager-readme-hero {
+  margin: 1.5rem 0 2.75rem;
+  padding: clamp(1.25rem, 2vw, 2rem);
+  border: 1px solid rgba(14, 116, 144, 0.18);
+  border-radius: 8px;
+  background:
+    linear-gradient(135deg, rgba(14, 165, 233, 0.10), rgba(20, 184, 166, 0.08) 48%, rgba(245, 158, 11, 0.08)),
+    rgba(255, 255, 255, 0.76);
+  box-shadow: 0 18px 48px rgba(15, 23, 42, 0.08);
+}
+
+.dark .manager-readme-hero {
+  border-color: rgba(125, 211, 252, 0.18);
+  background:
+    linear-gradient(135deg, rgba(14, 165, 233, 0.16), rgba(20, 184, 166, 0.12) 48%, rgba(245, 158, 11, 0.10)),
+    rgba(15, 23, 42, 0.78);
+  box-shadow: 0 22px 58px rgba(2, 6, 23, 0.34);
+}
+
+.manager-readme-intro {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.manager-readme-kicker,
+.manager-readme-updated,
+.manager-readme-profile-label,
+.manager-readme-fact span {
+  margin: 0;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.manager-readme-kicker {
+  color: #0f766e;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.dark .manager-readme-kicker {
+  color: #5eead4;
+}
+
+.manager-readme-updated {
+  color: rgba(71, 85, 105, 0.92);
+  font-size: 0.74rem;
+  font-weight: 700;
+}
+
+.dark .manager-readme-updated {
+  color: rgba(226, 232, 240, 0.72);
+}
+
+.manager-readme-lede {
+  max-width: 52rem;
+  margin: 0;
+  color: inherit;
+  font-size: 1.1rem;
+  line-height: 1.75;
+}
+
+.manager-readme-profile {
+  display: grid;
+  grid-template-columns: 76px minmax(0, 1fr);
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  padding-top: 1.4rem;
+  border-top: 1px solid rgba(14, 116, 144, 0.16);
+}
+
+.dark .manager-readme-profile {
+  border-top-color: rgba(125, 211, 252, 0.16);
+}
+
+.manager-readme-profile img {
+  display: block;
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgba(255, 255, 255, 0.88);
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.18);
+}
+
+.dark .manager-readme-profile img {
+  border-color: rgba(15, 23, 42, 0.8);
+}
+
+.manager-readme-profile p {
+  margin: 0;
+}
+
+.manager-readme-profile-label {
+  margin-bottom: 0.28rem !important;
+  color: #b45309;
+  font-size: 0.74rem;
+  font-weight: 700;
+}
+
+.dark .manager-readme-profile-label {
+  color: #fbbf24;
+}
+
+.manager-readme-facts {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.9rem;
+  margin-top: 1.45rem;
+}
+
+.manager-readme-fact {
+  min-height: 96px;
+  padding: 1rem;
+  border: 1px solid rgba(15, 118, 110, 0.14);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.62);
+}
+
+.dark .manager-readme-fact {
+  border-color: rgba(94, 234, 212, 0.14);
+  background: rgba(15, 23, 42, 0.56);
+}
+
+.manager-readme-fact span {
+  display: block;
+  margin-bottom: 0.45rem;
+  color: rgba(71, 85, 105, 0.88);
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+.dark .manager-readme-fact span {
+  color: rgba(226, 232, 240, 0.72);
+}
+
+.manager-readme-fact strong {
+  display: block;
+  color: inherit;
+  font-size: 1rem;
+  line-height: 1.45;
+}
+
+.manager-readme-callout {
+  margin: 1.6rem 0 2rem;
+  padding: 1rem 1.1rem;
+  border-left: 4px solid #0f766e;
+  border-radius: 0 8px 8px 0;
+  background: rgba(20, 184, 166, 0.08);
+}
+
+.dark .manager-readme-callout {
+  border-left-color: #5eead4;
+  background: rgba(45, 212, 191, 0.10);
+}
+
+.manager-readme-callout p {
+  margin: 0;
+}
+
+.manager-readme-shift-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.9rem;
+}
+
+.manager-readme-shift-grid {
+  margin: 1.2rem 0 1.5rem;
+}
+
+.manager-readme-shift {
+  border-radius: 8px;
+  border: 1px solid rgba(14, 116, 144, 0.16);
+  background: rgba(255, 255, 255, 0.58);
+}
+
+.dark .manager-readme-shift {
+  border-color: rgba(125, 211, 252, 0.16);
+  background: rgba(15, 23, 42, 0.54);
+}
+
+.manager-readme-shift {
+  min-height: 112px;
+  padding: 1rem;
+}
+
+.manager-readme-shift span {
+  display: block;
+  letter-spacing: 0;
+}
+
+.manager-readme-shift span {
+  margin-bottom: 0.45rem;
+  color: #0f766e;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.dark .manager-readme-shift span {
+  color: #5eead4;
+}
+
+.manager-readme-shift strong {
+  display: block;
+  color: inherit;
+  font-size: 1.02rem;
+  line-height: 1.45;
+}
+
+.manager-readme-guidance-grid {
+  margin: 1.15rem 0 1.9rem;
+}
+
+.manager-readme-guidance {
+  min-height: 154px;
+}
+
+.manager-readme-guidance p {
+  margin: 0.65rem 0 0;
+  color: inherit;
+  line-height: 1.7;
+}
+
+@media (max-width: 640px) {
+  .manager-readme-profile {
+    grid-template-columns: 1fr;
+  }
+
+  .manager-readme-profile img {
+    width: 68px;
+    height: 68px;
+  }
+
+  .manager-readme-facts {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 860px) {
+  .manager-readme-shift-grid {
+    grid-template-columns: 1fr;
+  }
+}

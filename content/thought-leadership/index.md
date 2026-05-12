@@ -37,6 +37,7 @@ Below are various engagements I've been involved with in the industry.
 
 ## Posts
 
+- May 2026: [Manager README](/manager-readme/)
 - May 2025: [Get the most out of AI](https://www.linkedin.com/posts/tylerkron_%F0%9D%97%94%F0%9D%97%9C-%F0%9D%97%B6%F0%9D%98%80-%F0%9D%97%B2%F0%9D%98%83%F0%9D%97%B2%F0%9D%97%BF%F0%9D%98%86%F0%9D%98%84%F0%9D%97%B5%F0%9D%97%B2%F0%9D%97%BF%F0%9D%97%B2-%F0%9D%97%AF%F0%9D%98%82%F0%9D%98%81-%F0%9D%97%AE-activity-7325897270757863426-idWq?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAK0cIYBEAPti3QKdYollV5UE4TID4pVP8c) 
 - November 2023: [Manager README](https://www.linkedin.com/posts/tylerkron_tylerreadme-for-people-leaders-activity-7130241444375613440-azjf)
 - April 2023: [My Approach to Solving Problems](https://www.linkedin.com/posts/tylerkron_software-engineers-activity-7059554531566645248-AMBj/)

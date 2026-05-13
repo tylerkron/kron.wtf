@@ -11,10 +11,10 @@ sharingLinks: ["linkedin", "email"]
 
 <section class="manager-readme-hero">
   <div class="manager-readme-intro">
-    <p class="manager-readme-kicker">Tyler Kron's Leadership README</p>
     <p class="manager-readme-updated">Last updated May 2026</p>
     <p class="manager-readme-lede">
-      This is a guide for people who report to me, and a public statement of the kind of leader I am trying to be.
+      My name is Tyler, and I’m an engineering leader. This is a guide for people who work with me, report to me,
+      or are curious how I think. It is also a mildly over-engineered attempt to make working with me easier.
       It is a living document and a starting point, not a substitute for building trust through real work.
     </p>
   </div>
@@ -24,9 +24,7 @@ sharingLinks: ["linkedin", "email"]
     <div>
       <p class="manager-readme-profile-label">Current chapter</p>
       <p>
-        I recently moved from directing a broader Platform Engineering organization to leading a
-        product-focused team working closer to product-market fit. I want to keep the judgment that came
-        with scale without dragging scale-era habits into work that needs speed, signal, and sharper bets.
+        I recently moved from leading a broader Platform Engineering organization to leading a small team where the job is to learn quickly, build deliberately, and find product-market fit through the right product bets.
       </p>
     </div>
   </div>
@@ -53,7 +51,7 @@ sharingLinks: ["linkedin", "email"]
 
 ## The short version
 
-I want the people who work for me to feel clear on what matters, trusted to think, comfortable disagreeing, and supported when the work gets murky.
+I want the people who work with me to feel clear on what matters, trusted to think, comfortable disagreeing, and supported when the work gets murky.
 
 I care about clarity, ownership, customer evidence, simple solutions, and honest feedback. I like steady forward motion. I dislike silent drift, avoidable ambiguity, and process that no one can explain.
 
@@ -115,7 +113,7 @@ Some of my old instincts are still useful. Some need to relax. In Platform Engin
   <div class="manager-readme-shift manager-readme-guidance">
     <span>Presence</span>
     <strong>Stay close without taking over</strong>
-    <p>On a small team, I will be closer to the work. I may ask deeper product, technical, or customer questions. If that ever feels like control instead of support, say so.</p>
+    <p>On a small team, I will be closer to the work. I may ask deeper product, technical, or customer questions. If that ever feels like control instead of support, say so. I am aiming for helpful proximity, not becoming a human Jira workflow.</p>
   </div>
   <div class="manager-readme-shift manager-readme-guidance">
     <span>Action</span>
@@ -134,8 +132,8 @@ Some of my old instincts are still useful. Some need to relax. In Platform Engin
   </div>
   <div class="manager-readme-shift manager-readme-guidance">
     <span>Feedback</span>
-    <strong>Be clear and useful</strong>
-    <p>I will give it clearly and with good intent, and I want the same in return.</p>
+    <strong>Be clear and actionable</strong>
+    <p>I will give feedback clearly and with good intent, and I want the same in return.</p>
   </div>
   <div class="manager-readme-shift manager-readme-guidance">
     <span>Pace</span>
@@ -188,7 +186,7 @@ Some of my old instincts are still useful. Some need to relax. In Platform Engin
 
 ### Communication
 
-I prefer clear, high-signal communication. Async is usually best for status, context, and simple decisions. Meetings are a tool, not my default. Live conversation is better for ambiguity, conflict, product tradeoffs, customer learning, or anything where 15 minutes together prevents two days of drift.
+I prefer clear, high-signal communication. Async is usually best for status, context, and simple decisions. Meetings are a tool, not my default - like all tools, they can be useful, misused, or somehow turned into a recurring 60-minute status ritual. Live conversation is better for ambiguity, conflict, product tradeoffs, customer learning, or anything where 15 minutes together prevents two days of drift.
 
 I also value simple, direct language. If we cannot explain the problem clearly, we probably do not understand it well enough yet.
 
@@ -221,4 +219,4 @@ This README is not meant to make working with me formulaic. It is meant to make 
 
 People are complex. Teams are dynamic. Context changes. I reserve the right to grow.
 
-If you work with me, I hope you feel challenged, trusted, supported, and clear on what we are trying to accomplish together.
+If you work with me, I hope you feel challenged, trusted, supported, and clear on what we are trying to accomplish. I also hope we can laugh often, because the work is hard enough without taking ourselves too seriously.

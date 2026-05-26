@@ -1,6 +1,7 @@
 ---
 title: "DAQiFi"
 description: "Learn about DAQiFi."
+weight: 10
 showAuthor: false
 showDate: false
 showPagination: false

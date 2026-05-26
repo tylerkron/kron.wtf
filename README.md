@@ -11,9 +11,12 @@ or if you want to see drafts
 `hugo server -D`
 
 
-## Upgrade Theme
+## Upgrade Hugo and Theme
+
+Congo v2.14.0 requires Hugo extended v0.158.0 or newer.
 
 ```
-go get github.com/jpanther/congo/v2@v2.9.0
+brew upgrade hugo
+go get github.com/jpanther/congo/v2@v2.14.0
+hugo --gc --minify
 ```
-

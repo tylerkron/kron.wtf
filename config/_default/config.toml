@@ -1,5 +1,5 @@
 baseURL = "https://kron.wtf"
-languageCode = "en"
+locale = "en"
 googleAnalytics = "G-RZD93Z6YPJ"
 
 [outputs]

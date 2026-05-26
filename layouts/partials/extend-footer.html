@@ -91,20 +91,36 @@
     var el = document.querySelector('header a[rel="me"]');
     if (!el) return;
 
+    var GLITCH_DURATION = 400;
+    var FIRST_GLITCH_MIN = 2000;
+    var FIRST_GLITCH_MAX = 4500;
+    var REPEAT_MIN = 7000;
+    var REPEAT_MAX = 16000;
+    var timer = null;
+
     el.classList.add('kw-glitch');
     el.setAttribute('data-text', el.textContent.trim());
 
+    function randomDelay(min, max) {
+      return min + Math.random() * (max - min);
+    }
+
     function glitch() {
+      el.classList.remove('kw-glitching');
+      void el.offsetWidth;  /* restart pseudo-element animations */
       el.classList.add('kw-glitching');
-      setTimeout(function () { el.classList.remove('kw-glitching'); }, 400);
-      schedule();
+      setTimeout(function () { el.classList.remove('kw-glitching'); }, GLITCH_DURATION);
     }
 
-    function schedule() {
-      setTimeout(glitch, 7000 + Math.random() * 9000);  /* every 7-16 s */
+    function schedule(min, max) {
+      clearTimeout(timer);
+      timer = setTimeout(function () {
+        glitch();
+        schedule(REPEAT_MIN, REPEAT_MAX);
+      }, randomDelay(min, max));
     }
 
-    setTimeout(glitch, 2500);  /* first glitch on page load */
+    schedule(FIRST_GLITCH_MIN, FIRST_GLITCH_MAX);
   }
 
 

@@ -1,6 +1,7 @@
 ---
 title: "Fettle"
-description: "Learn about Fettle."
+description: "Fettle was an engineering standards platform. It is now retired."
+weight: 100
 showAuthor: false
 showDate: false
 showPagination: false
@@ -9,10 +10,10 @@ cascade:
   showReadingTime: false
 ---
 
-Level up your engineering teams. With Fettle you can clearly communicate, measure, and, enforce engineering standards across your organization.
+Fettle was an engineering standards platform for communicating, measuring, and enforcing engineering standards across an organization.
+
+## Status
+
+Retired. Fettle is no longer an active product, and the public website has been taken down.
 
 ![Fettle](fettle.png)
-
-## Website
-
-[Fettle](https://fettle.dev/)

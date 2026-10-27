@@ -1,0 +1,31 @@
+<article class="kw-home">
+  <header class="kw-home-hero">
+    {{ with resources.Get .Site.Language.Params.Author.image }}
+      {{ partial "picture.html" (dict "img" (.Resize "224x224") "alt" $.Site.Language.Params.Author.name "class" "kw-home-photo" "webp" true) }}
+    {{ end }}
+    <div>
+      <p class="kw-home-name">{{ .Site.Language.Params.Author.name }}</p>
+      <h1>{{ .Site.Language.Params.Author.headline }}</h1>
+    </div>
+  </header>
+
+  <p class="kw-home-intro">{{ .Params.intro }}</p>
+
+  <nav class="kw-home-actions" aria-label="Explore and connect">
+    {{ range .Params.actions }}
+      {{ $url := .url }}
+      {{ with .pageRef }}
+        {{ $url = (site.GetPage .).RelPermalink }}
+      {{ end }}
+      <a href="{{ $url }}">{{ .label }}</a>
+    {{ end }}
+  </nav>
+
+  <div class="kw-home-body prose dark:prose-invert">
+    {{ .Content }}
+  </div>
+
+  <div class="kw-home-social text-2xl">
+    {{ partialCached "author-links.html" . }}
+  </div>
+</article>

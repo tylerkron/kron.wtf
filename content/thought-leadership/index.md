@@ -18,7 +18,7 @@ Below are various engagements I've been involved with in the industry.
 
 ## Books
 
-- August 2021: [Microservices In Real Life: Contract Testing](https://fidildev.gumroad.com/l/contract-testing)
+- August 2021: Co-authored *Microservices In Real Life: Contract Testing* (no longer available for purchase).
 
 ## Case Studies
 

@@ -1,7 +1,7 @@
 ---
 title: "Tyler Kron, agents and the platforms that power them"
 description: "Tyler Kron, agents and the platforms that power them"
-intro: "Director of 8bot at Pax8. I've spent years in platform engineering, building APIs, integrations, and infrastructure. These days, the thing calling the API is an agent."
+intro: "Engineering director of 8bot at Pax8. I've spent years in platform engineering, building APIs, integrations, and infrastructure. These days, the thing calling the API is an agent."
 actions:
   - label: "Writing & talks"
     pageRef: "thought-leadership"

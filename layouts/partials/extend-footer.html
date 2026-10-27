@@ -125,45 +125,7 @@
 
 
   /* ══════════════════════════════════════════════════════════════
-     3. TYPING ANIMATION — profile headline
-     Congo renders the headline as <h2 class="text-xl ..."> on the
-     homepage. We clear it and type it out character by character.
-     ══════════════════════════════════════════════════════════════ */
-  function initTyping() {
-    /* Only run on the homepage */
-    if (window.location.pathname !== '/' &&
-        !window.location.pathname.match(/^\/index\.html?$/)) return;
-
-    var text = 'Director by Day, Entrepreneur by Night';
-    var target = null;
-    var h2s = document.querySelectorAll('h2');
-    for (var i = 0; i < h2s.length; i++) {
-      if (h2s[i].textContent.trim() === text) {
-        target = h2s[i];
-        break;
-      }
-    }
-    if (!target) return;
-
-    /* Clear and attach blinking cursor */
-    target.textContent = '';
-    var cursor = document.createElement('span');
-    cursor.className = 'kw-cursor';
-    target.appendChild(cursor);
-
-    var idx = 0;
-    var id = setInterval(function () {
-      if (idx < text.length) {
-        target.insertBefore(document.createTextNode(text[idx++]), cursor);
-      } else {
-        clearInterval(id);          /* cursor keeps blinking after typing */
-      }
-    }, 50);
-  }
-
-
-  /* ══════════════════════════════════════════════════════════════
-     4. SCROLL REVEAL — article cards
+     3. SCROLL REVEAL — article cards
      Congo list pages render each item as <article class="mt-6 …">.
      We fade + slide them in as they enter the viewport.
      ══════════════════════════════════════════════════════════════ */
@@ -199,12 +161,10 @@
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', function () {
       initGlitch();
-      initTyping();
       initScrollReveal();
     });
   } else {
     initGlitch();
-    initTyping();
     initScrollReveal();
   }
 

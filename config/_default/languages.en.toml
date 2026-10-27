@@ -17,8 +17,8 @@ title = "kron.wtf"
 [params.author]
   name = "Tyler Kron"
   image = "img/tyler.png"
-  headline = "Director by Day, Entrepreneur by Night"
-  bio = "Keeping it real"
+  headline = "I build agents, and the platforms that power them."
+  bio = "Director of 8bot at Pax8. Integrations, platforms, and the systems that keep everything else running."
   links = [
   #   { email = "mailto:hello@your_domain.com" },
   #   { link = "https://link-to-some-website.com/" },

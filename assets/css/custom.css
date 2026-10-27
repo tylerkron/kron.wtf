@@ -12,19 +12,129 @@
   z-index: 9999;
 }
 
-/* ── Typing Cursor ───────────────────────────────────────────── */
-.kw-cursor {
-  display: inline-block;
-  width: 2px;
-  height: 0.9em;
-  background: currentColor;
-  margin-left: 2px;
-  vertical-align: middle;
-  animation: kw-blink 1s step-end infinite;
+/* ── Homepage ────────────────────────────────────────────────── */
+.kw-home {
+  max-width: 52rem;
+  margin: clamp(1rem, 4vw, 3.5rem) auto 2rem;
 }
 
-@keyframes kw-blink {
-  50% { opacity: 0; }
+.kw-home-hero {
+  display: flex;
+  align-items: center;
+  gap: 1.75rem;
+}
+
+.kw-home-photo {
+  display: block;
+  flex: 0 0 112px;
+  width: 112px;
+  height: 112px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.kw-home-name {
+  margin: 0 0 0.65rem;
+  color: rgb(var(--color-primary-700));
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.dark .kw-home-name {
+  color: rgb(var(--color-primary-300));
+}
+
+.kw-home h1 {
+  margin: 0;
+  font-size: clamp(2rem, 4.5vw, 3.25rem);
+  font-weight: 800;
+  line-height: 1.12;
+  letter-spacing: -0.025em;
+  text-wrap: balance;
+}
+
+.kw-home-intro {
+  margin: 2rem 0 1.5rem;
+  font-size: 1.15rem;
+  line-height: 1.8;
+}
+
+.kw-home-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 2.5rem;
+}
+
+.kw-home-actions a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0.55rem 1rem;
+  border: 1px solid rgb(var(--color-primary-600));
+  border-radius: 6px;
+  color: rgb(var(--color-primary-700));
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.kw-home-actions a:first-child {
+  background: rgb(var(--color-primary-700));
+  color: #fff;
+}
+
+.kw-home-actions a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.kw-home-actions a:focus-visible {
+  outline: 3px solid rgb(var(--color-primary-500));
+  outline-offset: 4px;
+}
+
+.dark .kw-home-actions a {
+  border-color: rgb(var(--color-primary-400));
+  color: rgb(var(--color-primary-300));
+}
+
+.dark .kw-home-actions a:first-child {
+  background: rgb(var(--color-primary-300));
+  color: rgb(var(--color-neutral-900));
+}
+
+.kw-home-body {
+  max-width: none;
+  padding-top: 0.5rem;
+  border-top: 1px solid rgb(var(--color-neutral-300));
+}
+
+.dark .kw-home-body {
+  border-top-color: rgb(var(--color-neutral-600));
+}
+
+.kw-home-social {
+  margin-top: 2rem;
+}
+
+@media (max-width: 640px) {
+  .kw-home-hero {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.25rem;
+  }
+
+  .kw-home-photo {
+    flex-basis: auto;
+    width: 88px;
+    height: 88px;
+  }
+
+  .kw-home-intro {
+    margin-top: 1.5rem;
+    font-size: 1.05rem;
+  }
 }
 
 /* ── Glitch Effect — site title ──────────────────────────────── */

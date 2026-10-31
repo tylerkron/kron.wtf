@@ -1,6 +1,6 @@
 ---
 title: "Launch Ready"
-description: "A fixed-price review for an app you built with an AI coding tool, before you put it in front of real users."
+description: "A fixed-price review before real people use an app you built with an AI coding tool."
 # Kept out of Hugo's draft flag on purpose. The Firebase preview build
 # runs `hugo` without -D, so draft: true would hide this page.
 showAuthor: false
@@ -13,79 +13,79 @@ showTableOfContents: false
 showTaxonomies: false
 ---
 
-<p class="kw-offer-lede">A fixed-price review before real users touch an app you built with an AI coding tool.</p>
+<p class="kw-offer-lede">A fixed-price review before real people use an app you built with an AI coding tool.</p>
 
-Cursor, Lovable, Bolt, Replit, v0, or something in that family. The app runs. What's usually still open is accounts, data, secrets, spend, and the ordinary launch work that gets skipped when you're moving fast.
+You built it in Cursor, Lovable, Bolt, Replit, v0, or a similar tool. It runs. A few things are often still open: who can get in, what they can see, what it might cost, and the basic launch work that gets skipped when you move fast.
 
-Agents do the wide pass. I review the findings. You get a ranked fix list, plus pull requests or copy-paste prompts for the tool you already use.
+You get a clear review from me. That is a plain list of what to fix, and why. Small fixes can come back as changes you can accept. The rest come back as instructions you can paste into the tool you already use.
 
 <p class="kw-offer-actions not-prose"><a class="kw-offer-cta" href="https://linkedin.com/in/tylerkron">Say hi on LinkedIn</a></p>
 
 ## Who it's for
 
-You built it quickly and you want to know it's reasonable to put in front of people who aren't you.
+You built it quickly. You want to know it is reasonable to put in front of people who are not you.
 
-- The happy path works. You're less sure about accounts, data, and what a stranger can do.
-- Auth, database rules, or API keys are mostly whatever the tool generated.
-- You want the order to fix things in, not a long report.
+- It works when you use it. You are less sure about everyone else.
+- Sign-in, who can see the data, or the private codes the app uses were mostly filled in by the tool.
+- You want a short list of what to fix first, not a long report.
 
-This is the wrong engagement if you need a penetration test, a compliance sign-off, or someone to own the product after the review.
+This is the wrong fit if you need someone to try to break in, a formal approval, or someone to run the product after this.
 
 ## What's checked
 
 <ul class="kw-checks not-prose">
   <li>
     <strong>Security</strong>
-    <span>Exposed keys and secrets in client bundles. Auth and authorization gaps. Database rules, including Supabase RLS and Firebase rules. Input validation. Known dependency vulnerabilities.</span>
+    <span>Who can sign in, and what they can do after that. Whether private codes are left where anyone can see them. Who is allowed to see and change the data. What happens when someone types something the app did not expect. Known problems in the software the app is built on.</span>
   </li>
   <li>
     <strong>Data and privacy</strong>
-    <span>What the app collects, where it goes, and whether a user can tell.</span>
+    <span>What the app collects, where that information goes, and whether a person can tell.</span>
   </li>
   <li>
-    <strong>SEO and social previews</strong>
-    <span>Title and meta tags, sitemap, robots.txt, and Open Graph images.</span>
+    <strong>Search and sharing</strong>
+    <span>The title, short description, and picture that show up in search and when someone shares the link. Also which pages should be listed, and which should be left out.</span>
   </li>
   <li>
-    <strong>Performance</strong>
-    <span>Core Web Vitals, and the obvious reasons the first load feels broken.</span>
+    <strong>Speed</strong>
+    <span>Whether the first screen shows up quickly, and the obvious reasons it feels slow.</span>
   </li>
   <li>
-    <strong>Reliability</strong>
-    <span>Error handling, logging, and whether a backup exists that you can restore.</span>
+    <strong>When things break</strong>
+    <span>What a person sees when something fails. Whether you can tell what went wrong. Whether you can get the data back.</span>
   </li>
   <li>
     <strong>Cost</strong>
-    <span>Runaway API or LLM spend, and missing rate limits.</span>
+    <span>Places a paid service, including an AI tool, can keep running and run up a bill. Whether one visitor can do that by accident.</span>
   </li>
   <li>
     <strong>Launch basics</strong>
-    <span>Privacy policy, terms, and analytics.</span>
+    <span>A privacy policy, terms of use, and a way to see how people use the app.</span>
   </li>
 </ul>
 
-Same list every time. A landing page and an app that stores other people's data do not get the same depth.
+Same list every time. I look harder at an app that stores other people's information than at a simple page.
 
 ## What you get
 
-- A ranked fix list: what to do first, what can wait, and why.
-- Pull requests when a fix is small enough to hand back safely. Otherwise a prompt you can paste into the tool you used.
-- A short note on what I did not check.
+- A plain list of what to fix, what can wait, and why.
+- Small, safe fixes as changes you can accept. Everything else as instructions you can paste into the tool you used.
+- A short note on what I did not look at.
 
 ## How it works
 
 <ol class="kw-steps not-prose">
   <li>
     <strong>You send the app.</strong>
-    <span>Repo access, a URL, or both. Tell me what "real users" means for this one.</span>
+    <span>A link to the project, a link to the running app, or both. Tell me what "real people" means for this one.</span>
   </li>
   <li>
     <strong>I review it.</strong>
-    <span>Agents cover the wide pass. I read the results, check the ones that matter, and drop the noise.</span>
+    <span>You get a clear review from me: what to fix, and why.</span>
   </li>
   <li>
     <strong>You get the list.</strong>
-    <span>Ranked fixes, plus PRs or prompts. You decide what to ship.</span>
+    <span>What to fix first, what can wait, and the changes or instructions. You decide what to put in front of people.</span>
   </li>
 </ol>
 
@@ -94,22 +94,22 @@ Same list every time. A landing page and an app that stores other people's data 
 <aside class="kw-price not-prose" aria-label="Pricing placeholder">
   <p class="kw-price-kicker">Placeholder</p>
   <p class="kw-price-amount">TBD</p>
-  <p>Fixed price. The number is not set, and this page is not a quote. Once it is priced, the scope is one app, one pass, and one written list. I'll tell you the price before any work starts.</p>
+  <p>Fixed price. The number is not set, and this page is not a quote. Once it is priced, it covers one app and one written list. I'll tell you the price before any work starts.</p>
 </aside>
 
 ## FAQ
 
-### Is this a pentest or a guarantee?
+### Is this a break-in test, or a promise that nothing will go wrong?
 
-No. I look for the mistakes that show up when an app was built fast: secrets in the client, weak auth, open database rules, unbounded spend on APIs and models. It is not a penetration test, and it is not a guarantee.
+No. I look for the mistakes that show up when an app was built fast. Private codes left in the open. Weak sign-in. Data anyone can open. Bills that can run away. This is not a test where someone tries to break in. It is not a guarantee.
 
 ### Will you rebuild the app?
 
-No. Small, safe fixes may come back as pull requests. Everything else comes back as a prompt you can hand to Cursor, Lovable, Bolt, Replit, v0, or whatever you used.
+No. Small, safe fixes may come back as changes you can accept. Everything else comes back as instructions you can paste into Cursor, Lovable, Bolt, Replit, v0, or whatever you used.
 
 ### What do you need from me?
 
-Read access to the code and a way to open the running app. Don't paste production secrets into a chat. If keys only live in a host dashboard, say so.
+A way to see the project, and a way to open the running app. Do not paste live passwords into a chat. If those only live on the site where you manage the app, say so.
 
 ## Say hi
 

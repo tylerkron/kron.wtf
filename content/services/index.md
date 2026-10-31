@@ -16,7 +16,7 @@ disableVisualEffects: true
 <section class="kw-launch-hero" aria-labelledby="launch-heading">
   <div class="kw-launch-intro">
     <p class="kw-launch-eyebrow"><span aria-hidden="true"></span> Launch Ready <span class="kw-launch-eyebrow-divider" aria-hidden="true">/</span> App reviews</p>
-    <h1 id="launch-heading">Built with AI.<br><span>Ready for<br class="kw-launch-break"> people?</span></h1>
+    <h1 id="launch-heading">Built with AI.<br><span>Ready for people?</span></h1>
     <p class="kw-launch-lede">Get a second set of eyes before you share your app. I check security, reliability, and launch essentials, then give you a clear plan for what to fix first.</p>
     <a class="kw-launch-button" href="https://linkedin.com/in/tylerkron">Let’s talk about your app <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
     <p class="kw-launch-byline">A personal review by <a href="/">Tyler Kron</a>.<br>Engineer. Product builder. Co-founder of <a href="/products/daqifi/">DAQiFi</a> &amp; <a href="/products/our-trove/">Our Trove</a>.</p>

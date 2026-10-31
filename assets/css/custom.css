@@ -497,10 +497,10 @@
 
 .kw-launch h1 {
   margin-top: 1.4rem;
-  font-size: clamp(2.75rem, 5.2vw, 4.25rem);
-  font-weight: 750;
-  letter-spacing: -.055em;
-  line-height: 1.03;
+  font-size: clamp(2.5rem, 4.4vw, 3.5rem);
+  font-weight: 700;
+  letter-spacing: -.02em;
+  line-height: 1.16;
 }
 .kw-launch h1 > span { color: var(--launch-accent); }
 .kw-launch .kw-launch-lede {
@@ -623,7 +623,7 @@
 
 @media (max-width: 1000px) {
   .kw-launch-hero { gap: 2rem; }
-  .kw-launch h1 { font-size: 3.15rem; }
+  .kw-launch h1 { font-size: 2.75rem; }
   .kw-launch-report { padding: 1.2rem; }
   .kw-launch-contact { padding: 1.8rem; grid-template-columns: 1fr; gap: 1.5rem; }
   .kw-launch .kw-launch-contact-action > p:last-child { text-align: left; }
@@ -632,8 +632,7 @@
 @media (max-width: 760px) {
   .kw-launch { margin-top: 1.5rem; }
   .kw-launch-hero { grid-template-columns: 1fr; gap: 2.5rem; padding-bottom: 2.5rem; }
-  .kw-launch h1 { font-size: clamp(2.9rem, 8.5vw, 4.25rem); }
-  .kw-launch-break { display: none; }
+  .kw-launch h1 { font-size: clamp(2.25rem, 10.5vw, 3.5rem); }
   .kw-launch .kw-launch-lede { max-width: 42ch; font-size: 1rem; }
   .kw-launch-preview { width: 100%; max-width: 30rem; margin: 0 auto; }
   .kw-launch-report { padding: 1.5rem; }

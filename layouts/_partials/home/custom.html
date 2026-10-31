@@ -21,6 +21,23 @@
     {{ end }}
   </nav>
 
+  {{ with .Params.featuredService }}
+    {{ $service := . }}
+    {{ with site.GetPage .pageRef }}
+      <section class="kw-home-service" aria-labelledby="home-service-heading">
+        <div>
+          <p class="kw-home-service-eyebrow">{{ $service.eyebrow }}</p>
+          <h2 id="home-service-heading">{{ $service.title }}</h2>
+          <p class="kw-home-service-description">{{ $service.description }}</p>
+        </div>
+        <a class="kw-home-service-link" href="{{ .RelPermalink }}">
+          {{ $service.label }}
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+        </a>
+      </section>
+    {{ end }}
+  {{ end }}
+
   <div class="kw-home-body prose dark:prose-invert">
     {{ .Content }}
   </div>

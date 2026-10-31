@@ -1,0 +1,20 @@
+<header class="kw-site-header print:hidden">
+  <div class="kw-site-brand">{{ partial "logo.html" . }}</div>
+  <nav class="kw-site-desktop-nav" aria-label="Main navigation">
+    <ul>{{ partial "header/menu-links.html" . }}</ul>
+  </nav>
+  <details class="kw-site-menu">
+    <summary>
+      Menu
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+    </summary>
+    <nav aria-label="Mobile navigation">
+      <ul>{{ partial "header/menu-links.html" . }}</ul>
+    </nav>
+  </details>
+  {{ if .Site.Params.enableSearch }}
+    <button id="search-button-1" class="kw-site-search" type="button" title="{{ i18n "search.open_button_title" }}">
+      {{ partial "icon.html" "search" }}
+    </button>
+  {{ end }}
+</header>

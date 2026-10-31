@@ -2,6 +2,12 @@
 title: "Tyler Kron, agents and the platforms that power them"
 description: "Tyler Kron, agents and the platforms that power them"
 intro: "Engineering director of 8bot at Pax8, where we're building an AI coworker. Previously, I led platform engineering teams helping other engineers build, ship, and run software with less friction."
+featuredService:
+  eyebrow: "Launch Ready · App reviews"
+  title: "Built an app with AI?"
+  description: "Get a second set of eyes before you share it. A clear review, practical fixes, and a plan for what to tackle first."
+  pageRef: "services"
+  label: "Explore Launch Ready"
 actions:
   - label: "Writing & talks"
     pageRef: "thought-leadership"
